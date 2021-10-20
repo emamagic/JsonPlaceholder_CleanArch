@@ -6,7 +6,6 @@ abstract class BaseDatasource {
   late RestProvider restProvider;
 
   BaseDatasource() {
-    /// always return same instance of dio
     var provider = DioProvider();
     restProvider = provider.restProvider;
   }
